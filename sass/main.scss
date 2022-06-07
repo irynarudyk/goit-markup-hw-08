@@ -1,5 +1,9 @@
-body {
-    background-color: rgb(255, 0, 208);
+// utils
+@import './utils/variables';
+@import './base/normalize';
+@import './utils/reset';
+@import './utils/container';
+@import './utils/visually-hidden';
 
-
-}
+// components
+@import './components/header/header';
