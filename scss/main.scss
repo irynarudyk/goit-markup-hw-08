@@ -3,8 +3,10 @@
 @import "./base/normalize";
 @import "./utils/reset";
 @import "./utils/container";
-@import "./utils/visually-hidden;
+@import "./utils/visually-hidden";
 
-
-
-
+// components
+@import "./components/header";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/contact-nav";
