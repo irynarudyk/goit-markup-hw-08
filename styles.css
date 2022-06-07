@@ -1,43 +1,4 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  margin: 0;
-}
 
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.header-nav {
-  display: flex;
-}
-.container.header-container {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  display: flex;
-}
 
 /*Лого*/
 .logo {
@@ -439,17 +400,6 @@ img {
 
   cursor: pointer;
   margin-bottom: 30px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .custom-checkbox {
