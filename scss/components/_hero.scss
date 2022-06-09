@@ -21,9 +21,13 @@
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--white-text);
-  font-weight: 696px;
+  width: 696px;
   font-weight: 900;
   letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // button
@@ -390,7 +394,7 @@
   padding-bottom: 94px;
 }
 
-.subject {
+.job__subject {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -399,23 +403,19 @@
   margin-bottom: 50px;
 }
 
-.subject-list,
-.list {
+.job__list {
   display: flex;
 }
 
-.subtitle .item + .item,
-.subject-list .item + .item,
-.specific-list .item + .item,
-.list .item-team + .item-team {
-  margin-left: 30px;
-}
-
-.job .item {
+.job__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.text-subject {
+.job__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -428,10 +428,162 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-text);
   font-weight: 700;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  /*padding: 27px 85px;*/
+}
+
+/*Наша команда*/
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-command__div {
+  background-color: var(--white-text);
+  padding: 30px 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-command__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-command__proficion {
+  line-height: 1.19;
+  color: var(--contact-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*--Социальные иконки--*/
+
+.team-command__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.team-command__item {
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-left: 10px;
+  }
+}
+
+.team-command__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-hover);
+  }
+
+  &:hover .team-command__icon,
+  &:focus .team-command__icon {
+    fill: #ffffff;
+  }
+}
+
+.team-command__icon {
+  fill: #afb1b8;
+  transition: fill var(--anim);
+}
+
+/* Наши клиенты*/
+
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients__regular {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__item {
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border var(--anim), fill var(--anim);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-hover);
+  }
+
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: var(--color-hover);
+  }
+}
+
+.clients__icon {
+  fill: #afb1b8;
 }

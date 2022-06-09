@@ -18,42 +18,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Хедер-->
     <header class="header">
-      <div class="container header-container">
+      <div class="header__container сontainer">
         <nav class="header-nav">
-          <a class="logo link header-nav-logo" href="./index.html" lang="en"
-            ><span class="logo-nav">Web</span>Studio</a
+          <a class="logo-header" href="./index.html" lang="en"
+            >Web<span class="logo-header__accent">Studio</span></a
           >
-          <ul class="header list">
-            <li class="item-header">
-              <a class="link-header link" href="./index.html">Студия</a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Студия</a>
             </li>
-            <li class="item-header">
-              <a class="link-header-nav link current" href="./portfolio.html"
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="item-header">
-              <a class="link-header link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list list-email">
-          <li class="item-email">
-            <a class="email-telefone" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="contact-nav">
+          <li class="contact-nav__item">
+            <a class="contact-nav__link" href="mailto:info@devstudio.com">
+              <svg class="contact-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item-email">
-            <a class="email-telefone" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contact-nav__item">
+            <a class="contact-nav__link" href="tel:+380961111111">
+              <svg class="contact-nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#vector"></use>
               </svg>
               +38 096 111 11 11</a
@@ -65,7 +67,7 @@
     <main>
       <!--Фильтр-->
       <section class="navigation">
-        <div class="container">
+        <div class="сontainer">
           <h1 hidden>Навигация</h1>
           <ul class="list-navigation">
             <li class="list li-navigation">
@@ -312,8 +314,8 @@
     </main>
     <!-- Підвал сторінки -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="container-footer">
+      <div class="сontainer footer-container">
+        <div class="сontainer-footer">
           <a class="logo-footer link" href="./index.html" lang="en"
             ><span class="logo-nav">Web</span>Studio</a
           >
@@ -345,7 +347,7 @@
         <div class="footer-cosial">
           <h3 class="footer-name">присоединяйтесь</h3>
           <ul class="list social">
-            <li class="social-team">
+            <li class="footer-item">
               <a
                 class="footer-link"
                 href=""
@@ -358,7 +360,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-team">
+            <li class="footer-item">
               <a
                 class="footer-link"
                 href=""
@@ -371,7 +373,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-team">
+            <li class="footer-item">
               <a
                 class="footer-link"
                 href=""
@@ -384,7 +386,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-team">
+            <li class="footer-item">
               <a
                 class="footer-link"
                 href=""
@@ -412,12 +414,10 @@
               />
             </label>
             <button class="subscribe-btn" type="submit">
-              <span class="subscribe-btn-footer"
-                >Подписаться
-                <svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </span>
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
