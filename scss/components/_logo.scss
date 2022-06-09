@@ -10,9 +10,9 @@
 
   text-decoration: none;
 
-  color: #2196f3;
+  color: var(--color-hover);
 
   &__accent {
-    color: #000;
+    color: var(--color-logo);
   }
 }
