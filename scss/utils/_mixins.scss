@@ -3,13 +3,13 @@
   $tablet: 768px;
   $desktop: 1200px;
 
-  @if $type == "mobmax767" {
-    @media screen and (max-width: #{$tablet - 1}) {
+  @if $type == "mobmin480" {
+    @media screen and (min-width: $mobile) {
       @content;
     }
   }
-  @if $type == "mobmin480" {
-    @media screen and (min-width: $mobile) {
+  @if $type == "mobmax767" {
+    @media screen and (max-width: #{$tablet - 1}) {
       @content;
     }
   }
