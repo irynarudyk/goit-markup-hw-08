@@ -6,13 +6,13 @@
 }
 
 @include mq(mobmin480) {
-  width: 480px;
+  max-width: 480px;
 }
 
 @include mq(tabmin768) {
-  width: 768px;
+  max-width: 768px;
 }
 
 @include mq(deskmin1200) {
-  width: 1200px;
+  max-width: 1200px;
 }

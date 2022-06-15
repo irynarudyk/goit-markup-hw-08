@@ -341,7 +341,7 @@
 /*Особенности*/
 
 .specific {
-  background-color: var(--white-text);
+  // background-color: var(--white-text);
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -353,11 +353,10 @@
 
 .specific__list {
   justify-content: center;
-  margin: -15px;
 
   @include mq(tabmin768) {
     display: flex;
-    flex-wrap: wrap;
+    margin: -15px;
   }
 
   @include mq(tab768_1199) {
@@ -369,28 +368,31 @@
 }
 
 .specific__item {
-  margin: 30px;
+  // margin: (0 auto);
 
-  @include mq(mobmin480) {
-    max-width: 450px;
-  }
+  // @include mq(mobmin480) {
+  //   width: 450px;
+  // }
 
   @include mq(mobmax767) {
-    max-width: 450px;
     &:not(:last-child) {
-      margin: 15px;
+      margin-bottom: 30px;
     }
   }
+
+  @include mq(tabmin768) {
+    margin: 15px;
+  }
+
   @include mq(tab768_1199) {
     max-width: 354px;
-    flex-basis: calc(100% / 2 - 30px);
-    margin: 15px 15px;
+    // flex-basis: calc(100% / 2 - 30px);
+    // margin: 15px 15px;
     // margin-top: 30px;
   }
 
   @include mq(deskmin1200) {
-    max-width: 270px;
-    margin: 15px 15px;
+    width: 270px;
 
     // &:not(:last-child) {
     //   margin: 15px;

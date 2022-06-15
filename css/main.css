@@ -316,15 +316,15 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  width: 480px;
+  max-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
-  width: 768px;
+  max-width: 768px;
 }
 
 @media screen and (min-width: 1200px) {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .visually-hidden {
@@ -463,7 +463,6 @@ img {
 /*Модальное окно*/
 /*Особенности*/
 .specific {
-  background-color: var(--white-text);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -479,7 +478,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -487,8 +485,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -507,21 +504,14 @@ img {
   }
 }
 
-.specific__item {
-  margin: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .specific__item {
-    max-width: 450px;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .specific__item {
-    max-width: 450px;
-  }
   .specific__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .specific__item {
     margin: 15px;
   }
 }
@@ -529,16 +519,12 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .specific__item {
     max-width: 354px;
-    -ms-flex-preferred-size: calc(100% / 2 - 30px);
-        flex-basis: calc(100% / 2 - 30px);
-    margin: 15px 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .specific__item {
-    max-width: 270px;
-    margin: 15px 15px;
+    width: 270px;
   }
 }
 
