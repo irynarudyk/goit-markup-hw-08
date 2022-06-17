@@ -1,6 +1,6 @@
-ul {
+ul,
+li {
   list-style: none;
-  padding: 0;
 }
 
 a {
@@ -12,6 +12,7 @@ h2,
 h3,
 h4,
 p,
+li,
 ul {
   margin: 0;
   padding: 0;

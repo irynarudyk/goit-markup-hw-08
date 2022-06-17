@@ -160,7 +160,7 @@
       <!-- </section> -->
 
       <!--Особенности-->
-      <section class="specific">
+      <section class="section specific">
         <div class="сontainer">
           <h2 hidden>Особенности</h2>
           <ul class="specific__list">
@@ -218,52 +218,70 @@
 
       <!--Чем мы занимаемся-->
 
-      <!-- <section class="job">
+      <section class="section job">
         <div class="сontainer">
           <h2 class="job__subject">Чем мы занимаемся</h2>
           <ul class="job__list">
             <li class="job__item">
               <img
+                srcset="./images/18707.jpg 370w, ./images/18707@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/18707.jpg"
                 alt="Изучение нового кода"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="job__text">Десктопные приложения</p>
             </li>
             <li class="job__item">
               <img
+                srcset="./images/2713.jpg 370w, ./images/2713@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/2713.jpg"
                 alt="Смартфон"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="job__text">Мобильные приложения</p>
             </li>
             <li class="job__item">
               <img
+                srcset="./images/1119.jpg 370w, ./images/1119@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px"
                 src="./images/1119.jpg"
                 alt="Графический планшет"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="job__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
-      <!-- <section class="team">
-        <div class="container">
+      <section class="section team">
+        <div class="сontainer">
           <h2 class="team__team">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/4853.jpg"
+                class="foto"
+                srcset="
+                  ./images/igor-mob.jpg     450w,
+                  ./images/igor-mob@2x.jpg  900w,
+                  ./images/igor-tab.jpg     354w,
+                  ./images/igor-tab@2x.jpg  708w,
+                  ./images/igor-desc.jpg    270w,
+                  ./images/igor-desc@2x.jpg 540w
+                "
+                src="./images/igor-mob.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
               />
               <div class="team-command__div">
                 <h3 class="team-command__name">Игорь Демьяненко</h3>
@@ -328,10 +346,19 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/5844.jpg"
+                class="foto"
+                srcset="
+                  ./images/olga-mob.jpg     450w,
+                  ./images/olga-mob@2x.jpg  900w,
+                  ./images/olga-tab.jpg     354w,
+                  ./images/olga-tab@2x.jpg  708w,
+                  ./images/olga-desc.jpg    270w,
+                  ./images/olga-desc@2x.jpg 540w
+                "
+                src="./images/olga-mob.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
               />
               <div class="team-command__div">
                 <h3 class="team-command__name">Ольга Репина</h3>
@@ -396,10 +423,19 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/16166.jpg"
+                class="foto"
+                srcset="
+                  ./images/nikolai-mob.jpg     450w,
+                  ./images/nikolai-mob@2x.jpg  900w,
+                  ./images/nikolai-tab.jpg     354w,
+                  ./images/nikolai-tab@2x.jpg  708w,
+                  ./images/nikolai-desc.jpg    270w,
+                  ./images/nikolai-desc@2x.jpg 540w
+                "
+                src="./images/nikolai-mob.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
               />
               <div class="team-command__div">
                 <h3 class="team-command__name">Николай Тарасов</h3>
@@ -462,10 +498,19 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/2968.jpg"
+                class="foto"
+                srcset="
+                  ./images/mihail-mob@2x.jpg  900w,
+                  ./images/mihail-mob.jpg     450w,
+                  ./images/mihail-tab.jpg     354w,
+                  ./images/mihail-tab@2x.jpg  708w,
+                  ./images/mihail-desc.jpg    270w,
+                  ./images/mihail-desc@2x.jpg 540w
+                "
+                src="./images/mihail.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
               />
               <div class="team-command__div">
                 <h3 class="team-command__name">Михаил Ермаков</h3>
@@ -528,9 +573,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- Наши клиенты-->
+      <!-- Постоянные клиенты-->
       <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__regular">Постоянные клиенты</h2>
