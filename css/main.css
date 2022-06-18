@@ -317,15 +317,21 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  max-width: 480px;
+  .сontainer {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  max-width: 768px;
+  .сontainer {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  max-width: 1200px;
+  .сontainer {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -473,7 +479,408 @@ img {
   fill: currentColor;
 }
 
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  max-width: 480px;
+  background-position: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_mob.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mob.jpg");
+  background-size: 480px 400px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_mob@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mob@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_tab.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tab.jpg");
+    background-size: 768px 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_tab@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_tab@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_desk.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_desk.jpg");
+    background-size: 1600px 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header_desk@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_desk@2x.jpg");
+  }
+}
+
+.hero__title {
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+  color: var(--white-text);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--button-color);
+  color: var(--white-text);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color var(--anim);
+  transition: background-color var(--anim);
+}
+
+.button:hover, .button:focus {
+  background-color: var(--button-hover);
+}
+
 /*Модальное окно*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity var(--anim), visibility var(--anim);
+  transition: opacity var(--anim), visibility var(--anim);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform var(--anim);
+  transition: -webkit-transform var(--anim);
+  transition: transform var(--anim);
+  transition: transform var(--anim), -webkit-transform var(--anim);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}
+
+/* початковий стан елемента перед анімацією */
+.backdrop.is-hidden.modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.4);
+          transform: translate(-50%, -50%) scale(0.4);
+  opacity: 0;
+}
+
+/* кінцевий стан елемента після анімації */
+.backdrop.modal {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: var(--white-text);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
+}
+
+.modal-btn:hover, .modal-btn:focus {
+  fill: var(--button-hover);
+}
+
+.btn-close {
+  fill: currentColor;
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
+}
+
+.btn-close:hover, .btn-close:focus {
+  fill: var(--button-hover);
+}
+
+/*Форма*/
+.form__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--form-color);
+}
+
+.form-contact__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-label__comments {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-contact__name {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.form-contact__input-container {
+  position: relative;
+  display: block;
+}
+
+.form-contact__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 12px 16px;
+  padding-left: 42px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--form-color);
+  outline: transparent;
+  -webkit-transition: border-color var(--anim);
+  transition: border-color var(--anim);
+}
+
+.form-contact__input:focus, .form-contact__input:hover {
+  border-color: var(--color-hover);
+}
+
+.form-contact__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: var(--form-color);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
+}
+
+.form-contact__input:focus + .form-contact__icon {
+  fill: var(--color-hover);
+}
+
+.form-contact__comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  outline: transparent;
+  -webkit-transition: border-color var(--anim);
+  transition: border-color var(--anim);
+}
+
+.form-contact__comments:focus, .form-contact__comments:hover {
+  border-color: var(--color-hover);
+}
+
+/*Чекбокс*/
+.form-contact__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.form-contact__custom-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  -webkit-transition: background-color var(--anim);
+  transition: background-color var(--anim);
+}
+
+.form-contact__checkbox-icon {
+  opacity: 0;
+  -webkit-transition: opacity var(--anim);
+  transition: opacity var(--anim);
+}
+
+.form-contact__checkbox-input:checked + .form-contact__custom-checkbox {
+  background-color: var(--color-hover);
+  border-color: var(--color-hover);
+  color: #000;
+  fill: var(--white-text);
+}
+
+.form-contact__checkbox-input:checked
++ .form-contact__custom-checkbox
+.form-contact__checkbox-icon {
+  opacity: 1;
+}
+
+.form-contact__checkbox-input:focus + .form-contact__custom-checkbox {
+  border-color: var(--color-hover);
+}
+
+.form-contact__checkbox-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-color);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-contact__checkbox-text {
+    font-size: 14px;
+  }
+}
+
+.form-contact__checkbox-link {
+  color: var(--color-hover);
+}
+
+.form-contact__checkbox-button {
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--color-hover);
+  color: var(--white-text);
+  min-width: 200px;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px;
+  padding: 10px 32px;
+  margin-bottom: 40px;
+  -webkit-transition: background-color var(--anim);
+  transition: background-color var(--anim);
+}
+
+.form-contact__checkbox-button:hover, .form-contact__checkbox-button:focus {
+  background-color: var(--button-hover);
+  color: var(--white-text);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /*Особенности*/
 .specific__list {
   -webkit-box-pack: center;
