@@ -18,7 +18,7 @@
     <!--Хедер-->
     <header class="header">
       <div class="header__container сontainer">
-        <a class="logo-header" href="./index.html" lang="en"
+        <a class="logo-header" href="./portfolio.html" lang="en"
           >Web<span class="logo-header__accent">Studio</span></a
         >
         <button
@@ -108,12 +108,12 @@
         <nav class="header-nav">
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href=""
-                >Студия</a
-              >
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link site-nav__link--current" href=""
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -140,9 +140,10 @@
         </ul>
       </div>
     </header>
+
+    <!--Фильтр-->
     <main>
-      <!--Фильтр-->
-      <section class="navigation">
+      <section class="navigation section">
         <div class="сontainer">
           <h1 hidden>Навигация</h1>
           <ul class="list-navigation">
@@ -171,11 +172,18 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/1.jpg"
+                    srcset="
+                      ./images/desk1.jpg    370w,
+                      ./images/tab1.jpg     354w,
+                      ./images/mob1.jpg     450w,
+                      ./images/desk1@2x.jpg 740w,
+                      ./images/tab1@2x.jpg  708w,
+                      ./images/mob1@2x.jpg  900w
+                    "
+                    src="./images/mob1.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -193,12 +201,20 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/2.jpg"
+                    srcset="
+                      ./images/desk2.jpg    370w,
+                      ./images/tab2.jpg     354w,
+                      ./images/mob2.jpg     450w,
+                      ./images/desk2@2x.jpg 740w,
+                      ./images/tab2@2x.jpg  708w,
+                      ./images/mob2@2x.jpg  900w
+                    "
+                    src="./images/mob2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
+
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -218,11 +234,18 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/3.jpg"
+                    srcset="
+                      ./images/desk3.jpg    370w,
+                      ./images/tab3.jpg     354w,
+                      ./images/mob3.jpg     450w,
+                      ./images/desk3@2x.jpg 740w,
+                      ./images/tab3@2x.jpg  708w,
+                      ./images/mob3@2x.jpg  900w
+                    "
+                    src="./images/mob3.jpg"
                     alt="Ресторан Seafood"
-                    width="370                height="
-                    294
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -242,11 +265,18 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/4.jpg"
+                    srcset="
+                      ./images/desk4.jpg    370w,
+                      ./images/tab4.jpg     354w,
+                      ./images/mob4.jpg     450w,
+                      ./images/desk4@2x.jpg 740w,
+                      ./images/tab4@2x.jpg  708w,
+                      ./images/mob4@2x.jpg  900w
+                    "
+                    src="./images/mob4.jpg"
                     alt="Проект Prime"
-                    width="370                height="
-                    294
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
 
                   <p class="paragraph">
@@ -266,13 +296,19 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/5.jpg"
+                    srcset="
+                      ./images/desk5.jpg    370w,
+                      ./images/tab5.jpg     354w,
+                      ./images/mob5.jpg     450w,
+                      ./images/desk5@2x.jpg 740w,
+                      ./images/tab5@2x.jpg  708w,
+                      ./images/mob5@2x.jpg  900w
+                    "
+                    src="./images/mob5.jpg"
                     alt="Проект Boxes"
-                    width="370                  height="
-                    294
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
-
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -290,13 +326,19 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/6.jpg"
+                    srcset="
+                      ./images/desk6.jpg    370w,
+                      ./images/tab6.jpg     354w,
+                      ./images/mob6.jpg     450w,
+                      ./images/desk6@2x.jpg 740w,
+                      ./images/tab6@2x.jpg  708w,
+                      ./images/mob6@2x.jpg  900w
+                    "
+                    src="./images/mob6.jpg"
                     alt="Inspiration has no Borders"
-                    width="370                  height="
-                    294
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
-
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -314,11 +356,18 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/7.jpg"
+                    srcset="
+                      ./images/desk7.jpg    370w,
+                      ./images/tab7.jpg     354w,
+                      ./images/mob7.jpg     450w,
+                      ./images/desk7@2x.jpg 740w,
+                      ./images/tab7@2x.jpg  708w,
+                      ./images/mob7@2x.jpg  900w
+                    "
+                    src="./images/mob7.jpg"
                     alt="Проект Prime"
-                    width="370                  height="
-                    294
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
 
                   <p class="paragraph">
@@ -340,11 +389,18 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/8.jpg"
+                    srcset="
+                      ./images/desk8.jpg    370w,
+                      ./images/tab8.jpg     354w,
+                      ./images/mob8.jpg     450w,
+                      ./images/desk8@2x.jpg 740w,
+                      ./images/tab8@2x.jpg  708w,
+                      ./images/mob8@2x.jpg  900w
+                    "
+                    src="./images/mob8.jpg"
                     alt="Проект LAB"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
 
                   <p class="paragraph">
@@ -364,13 +420,19 @@
               <a class="gallery link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    class="image"
-                    src="./images/9.jpg"
+                    srcset="
+                      ./images/desk9.jpg    370w,
+                      ./images/tab9.jpg     354w,
+                      ./images/mob9.jpg     450w,
+                      ./images/desk9@2x.jpg 740w,
+                      ./images/tab9@2x.jpg  708w,
+                      ./images/mob9@2x.jpg  900w
+                    "
+                    src="./images/mob9.jpg"
                     alt="Growing Business"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    loading="lazy"
                   />
-
                   <p class="paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
